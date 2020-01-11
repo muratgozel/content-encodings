@@ -1,0 +1,41 @@
+{
+  "name": "content-encodings",
+  "version": "0.1.1",
+  "description": "Content encoding and decoding library for node applications.",
+  "main": "source/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "for i in tests/*.js; do node \"$i\"; done",
+    "release": "bash dev/push.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratgozel/content-encodings.git"
+  },
+  "keywords": [
+    "base64",
+    "ascii",
+    "quoted-printable",
+    "utf8",
+    "url",
+    "hex",
+    "gzip",
+    "brotli",
+    "deflate",
+    "content-encoding",
+    "content-decoding",
+    "character-encoding"
+  ],
+  "author": "Murat Gözel <murat@gozel.com.tr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muratgozel/content-encodings/issues"
+  },
+  "homepage": "https://github.com/muratgozel/content-encodings#readme",
+  "dependencies": {
+    "@ronomon/quoted-printable": "git+https://github.com/vlasky/quoted-printable.git",
+    "node-zstandard": "^1.2.4"
+  }
+}
